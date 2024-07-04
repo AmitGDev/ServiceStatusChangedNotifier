@@ -146,8 +146,8 @@ DWORD WINAPI ServiceStatusChangedNotifier::SubscribeServiceChangeNotifications_w
 		}
 
 		FreeLibrary(dll);
-	}
-	else return_value = GetLastError();
+
+	} else return_value = GetLastError();
 
 	return return_value; // Either ERROR_SUCCESS or SystemError or LastError.
 }
